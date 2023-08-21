@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDU | Best College</title>
+
+    <!-- <link rel="ic" href="images/logo.png"> -->
+    <link rel="shortcut icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="shortcut icon" href="images/logo.png" type="image/png"> -->
+
+    <script src="js/jquery.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="nav" id="nav">
+        <nav>
+            <div class="titleDiv">
+                <a href="index.html" class="title"><i class='bx bxs-graduation'></i> EDU</a>
+                <div class="menuBtn" id="menuBtn"><i class='bx bx-menu'></i></div>
+            </div>
+            <div class="links" id="menuLinks">
+                <ul>
+                    <li><a href="index.html#homeDiv" class="navlink">Home</a></li>
+                    <li><a href="#" class="navlink">About</a></li>
+                    <li><a href="index.html#courseDiv" class="navlink">Course</a></li>
+                    <li><a href="index.html#blogDiv" class="navlink">Blog</a></li>
+                    <li><a href="index.html#contactDiv" class="navlink">Contact Us</a></li>
+                    <li><a href="portals.html" class="navlink active">Portals</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- portals  -->
+
+    <div class="portalsDiv paddingDiv">
+        <div class="col">
+            <p class="title">Portals</p>
+            <p class="details">These portal are desgined to make the workflow easier for both the student and teacher. Using these portals teacher and students can perform thier certain tasks digitally without loosing workflow. Select your portal according to your place, students selects the student portal and teachers select teacher portal for thier certain works.</p>
+            <div class="btndiv">
+                <a href="assets/includes/student/signin.html" class="btn"><i class='bx bx-book-reader'></i> <p>Student portal</p></a>
+                <a href="assets/includes/teacher/signin.html" class="btn"><i class='bx bx-book-open'></i> <p>Teacher portal</p></a>
+            </div>
+        </div>
+        <div class="col">
+            <img src="images/p8.png">
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <div class="footerDiv">
+        <footer>
+            <div class="coldiv">
+                <div class="col">
+                    <p>Social Links</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100011684578581"><i class='bx bxl-facebook'></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/_himanshu_sharma_16/"><i class='bx bxl-instagram' ></i> Instagram</a></li>
+                        <li><a href="#"><i class='bx bxl-youtube' ></i> Youtube</a></li>
+                        <li><a href="#"><i class='bx bxl-twitter' ></i> Twitter</a></li>
+                        <li><a href="#"><i class='bx bxl-play-store' ></i> Google Play</a></li>
+                        <li><a href="#"><i class='bx bxl-apple' ></i> Apple Store</a></li>
+                    </ul>
+                </div>
+                <div class="titleDiv">
+                    <a href="#homeDiv" class="title"><i class='bx bxs-graduation' ></i> EDU</a>
+                    <p class="text">Our purpose is to provide best, safe, useful and great knowledge to the student to make thier future bright.</p>
+                </div>
+                <div class="col">
+                    <p>Useful Links</p>
+                    <ul>
+                        <li><a href="#"><i class='bx bx-message-square-detail' ></i> About Us</a></li>
+                        <li><a href="#courseDiv"><i class='bx bx-medal' ></i> Courses</a></li>
+                        <li><a href="#blogDiv"><i class='bx bxs-news' ></i> Blogs</a></li>
+                        <li><a href="assets/includes/student/signin.html"><i class='bx bxs-dashboard' ></i> Student Portal</a></li>
+                        <li><a href="assets/includes/teacher/signin.html"><i class='bx bxs-dashboard' ></i> Teacher Portal</a></li>
+                        <li><a href="#"><i class='bx bx-map' ></i> Location</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyrightDiv">
+                Copyright © 2022-EDU
+            </div>
+        </footer>
+    </div>
+
+
+    <script>
+
+        const menuBtn=document.getElementById("menuBtn");
+        const menuLinks=document.getElementById("menuLinks");
+
+        menuBtn.onclick=()=>{
+            if(menuLinks.style.display=="flex"){
+                menuLinks.style.display="none";
+            }else{
+                menuLinks.style.display="flex";
+            }
+        }
+
+        const nav=document.getElementById("nav");
+        const offset=nav.offsetHeight;
+
+        window.onscroll=()=>{
+            if(window.pageYOffset >= offset){
+                nav.classList.add("fixed");
+                $(".paddingDiv").css("padding-top","100px");
+            }else{
+                nav.classList.remove("fixed");
+                $(".paddingDiv").css("padding-top","20px");
+            }
+        }
+
+        const rightScrollBtn=document.getElementById("rightBtn");
+        const leftScrollBtn=document.getElementById("leftBtn");
+        const scrollCardDiv=document.getElementById("scrollCardDiv");
+
+        rightScrollBtn.onclick=()=>{
+            scrollCardDiv.scrollLeft+=100;
+        }
+        leftScrollBtn.onclick=()=>{
+            scrollCardDiv.scrollLeft-=100;
+        }
+
+        $(".navlink").click(function(){
+            $(".navlink.active").removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
+</body>
+
+</html>

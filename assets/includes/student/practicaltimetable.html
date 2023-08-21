@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+
+    <!-- <link rel="ic" href="images/logo.png"> -->
+    <link rel="shortcut icon" href="/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="shortcut icon" href="images/logo.png" type="image/png"> -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="topnav">
+            <div class="title">
+                <div class="menuBtn" id="menuBtn">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <p>Practical Time Table</p>
+            </div>
+            <div class="profile">
+                <a href="dashboard.html" class="profileBtn">
+                    <img src="images/profile.jpg">
+                </a>
+                <a href="#" class="notifyBtn" id="notifyDivBtn">
+                    <i class='bx bx-bell'></i>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="sidenav" id="sideNav">
+                <div class="userprofile">
+                    <img src="images/profile.jpg">
+                    <div class="details">
+                        <p>programming</p>
+                        <p>R1819802</p>
+                        <p>MCA (Master of computer applications)</p>
+                    </div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="dashboard.html"><i class='bx bx-user'></i> Profile</a></li>
+                        <li><a href="classes.html"><i class='bx bx-file'></i> Classes</a></li>
+                        <li><a href="iamarks.html"><i class='bx bx-clipboard'></i> IA Marks</a></li>
+                        <li><a href="examtimetable.html"><i class='bx bx-calendar'></i> Exam Time Table</a></li>
+                        <li><a href="hallticket.html" ><i class='bx bx-file-blank'></i> Hall Ticket</a></li>
+                        <li><a href="practicaltimetable.html" class="activeMenu"><i class='bx bx-calendar'></i> Practical Time Table</a></li>
+                        <li><a href="#"><i class='bx bx-help-circle'></i> Help Desk</a></li>
+                        <li><a href="changemobileno.html"><i class='bx bx-phone'></i> Change Mobile No.</a></li>
+                        <li><a href="oldpapers.html"><i class='bx bx-file'></i> Old Question Papers</a></li>
+                        <li><a href="updatepassword.html"><i class='bx bx-lock-alt'></i> Change Password</a></li>
+                        <li><a href="#"><i class='bx bx-log-out-circle'></i> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="smallcontainer iaMarksDiv">
+
+                <div class="notifyDiv" id="notifyDiv">
+                    <div class="notify">
+                        <div class="title">
+                            <p>Test Assignment</p>
+                            <div class="btn"><i class='bx bx-x'></i></div>
+                        </div>
+                        <div class="text">THis is a test notification. some has assigned you a new assignment.</div>
+                    </div>
+                    <div class="notify">
+                        <div class="title">
+                            <p>Test Assignment</p>
+                            <div class="btn"><i class='bx bx-x'></i></div>
+                        </div>
+                        <div class="text">THis is a test notification. some has assigned you a new assignment.</div>
+                    </div>
+                    <div class="notify">
+                        <div class="title">
+                            <p>Test Assignment</p>
+                            <div class="btn"><i class='bx bx-x'></i></div>
+                        </div>
+                        <div class="text">THis is a test notification. some has assigned you a new assignment.</div>
+                    </div>
+                    <div class="notify">
+                        <div class="title">
+                            <p>Test Assignment</p>
+                            <div class="btn"><i class='bx bx-x'></i></div>
+                        </div>
+                        <div class="text">THis is a test notification. some has assigned you a new assignment.</div>
+                    </div>
+                    <div class="notify">
+                        <div class="title">
+                            <p>Test Assignment</p>
+                            <div class="btn"><i class='bx bx-x'></i></div>
+                        </div>
+                        <div class="text">THis is a test notification. some has assigned you a new assignment.</div>
+                    </div>
+                    <div class="notify">
+                        <div class="title">
+                            <p>Test Assignment</p>
+                            <div class="btn"><i class='bx bx-x'></i></div>
+                        </div>
+                        <div class="text">THis is a test notification. some has assigned you a new assignment.</div>
+                    </div>
+                </div>
+
+                
+                <div class="result">
+                    <p class="title">Practical Time Table</p>
+                    <div class="detailsDiv">
+                        <p class="sem">I Semester Master of Computer Application (2021 Batch Only) Mar 2022 Examination</p>
+                        <div class="details">
+                            <p>Register Number : R1819802</p>
+                            <p>Student Name : programming</p>
+                            <p>Father Name : test</p>
+                            <p>Mother Name : test</p>
+                        </div>
+                    </div>
+                    <div class="btndiv">
+                        <div class="printBtn" id="printBtn">
+                            <p><i class='bx bx-printer'></i> Print Time Table</p>
+                        </div>
+                    </div>
+                    <div class="tableDiv">
+                       
+                        
+                        <table>
+                            <tr class="tableHead">
+                                <td>Sr No.</td>
+                                <td>Date</td>
+                                <td>Sub Code/ Serial No</td>
+                                <td>Practical Name</td>
+                                <td>Paper Id</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>04-04-2022</td>
+                                <td>20BCC11C1</td>
+                                <td>C++ and Data Structures</td>
+                                <td>67002-N</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>04-04-2022</td>
+                                <td>20BCC11C1</td>
+                                <td>C++ and Data Structures</td>
+                                <td>67002-N</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>04-04-2022</td>
+                                <td>20BCC11C1</td>
+                                <td>C++ and Data Structures</td>
+                                <td>67002-N</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>04-04-2022</td>
+                                <td>20BCC11C1</td>
+                                <td>C++ and Data Structures</td>
+                                <td>67002-N</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>04-04-2022</td>
+                                <td>20BCC11C1</td>
+                                <td>C++ and Data Structures</td>
+                                <td>67002-N</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>04-04-2022</td>
+                                <td>20BCC11C1</td>
+                                <td>C++ and Data Structures</td>
+                                <td>67002-N</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>04-04-2022</td>
+                                <td>20BCC11C1</td>
+                                <td>C++ and Data Structures</td>
+                                <td>67002-N</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuBtn=document.getElementById("menuBtn");
+        const sideNav=document.getElementById("sideNav");
+        
+        
+        window.onload=function(){
+            if(screen.width>900){
+                sideNav.style.marginLeft="0px";
+            
+            }
+        }
+        // window.onclick=function(){
+        //     if(screen.width<900){
+        //         sideNav.style.marginLeft="-300px";
+            
+        //     }
+        // }
+        menuBtn.onclick=function(){
+            // sideNav.style.marginLeft="-120%";
+            if(sideNav.style.marginLeft=="0px"){
+                sideNav.style.marginLeft="-300px";
+            }else{
+                sideNav.style.marginLeft="0px";
+            }
+            
+        }
+
+        const notifyDivBtn=document.getElementById("notifyDivBtn");
+        const notifyDiv=document.getElementById("notifyDiv");
+
+        notifyDivBtn.onclick=()=>{
+            // alert("hello");
+            if(notifyDiv.style.right == "10px"){
+                notifyDiv.style.right="-120%";
+            }else{
+                notifyDiv.style.right="10px";
+            }
+
+        }
+        
+        const printBtn=document.getElementById("printBtn");
+        printBtn.onclick=()=>{
+            window.print();
+        }
+    </script>
+</body>
+
+</html>

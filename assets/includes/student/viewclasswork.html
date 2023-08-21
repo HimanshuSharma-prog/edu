@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+
+    <!-- <link rel="ic" href="images/logo.png"> -->
+    <link rel="shortcut icon" href="/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="shortcut icon" href="images/logo.png" type="image/png"> -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="topnav">
+            <div class="title">
+                <div class="backBtn" id="backBtn">
+                    <i class='bx bxs-chevron-left'></i>
+                </div>
+                <p>Assignment Details</p>
+            </div>
+            <div class="profile">
+                <a href="dashboard.html" class="profileBtn">
+                    <img src="images/profile.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="container detailsContainer">
+            <div class="details">
+                <div class="header">
+                    <p><i class='bx bx-file'></i> Assignment</p>
+                    <p>01/04/2022</p>
+                </div>
+                <div class="fileDiv">
+                    <a href="docfile.html" class="docFile"><i class='bx bxs-file-doc' ></i> assignment.doc</a>
+                    <a href="docfile.html" class="docFile"><i class='bx bxs-file-pdf' ></i> test.pdf</a>
+                    <a href="docfile.html" class="docFile"><i class='bx bxs-image' ></i> assignment.png</a>
+                    <a href="docfile.html" class="docFile"><i class='bx bxs-file-doc' ></i> assignment.doc</a>
+                    <a href="docfile.html" class="docFile"><i class='bx bxs-file-pdf' ></i> test.pdf</a>
+                    <a href="docfile.html" class="docFile"><i class='bx bxs-image' ></i> assignment.png</a>
+                </div>
+                <div class="uploadDiv">
+                    <p class="title"><i class='bx bx-file'></i> Upload your work</p>
+                    <form action="">
+                        <div class="inputDiv">
+                            <p><i class='bx bx-file-blank'></i> Select your file</p>
+                            <input type="file" name="">
+                        </div>
+                        <input type="submit" value="Submit" class="btn">
+                    </form>
+                </div>
+                <div class="commentDiv">
+                    <p class="title"> <i class='bx bx-group'></i> Class Comments</p>
+                    <div class="userComment">
+                        <img src="images/profile.jpg">
+                        <div class="msg">
+                            <p class="name">Programming</p>
+                            <p class="userMsg">Hello this is a test message</p>
+                        </div>
+                    </div>
+                    <div class="userComment">
+                        <img src="images/profile.jpg">
+                        <div class="msg">
+                            <p class="name">Programming</p>
+                            <p class="userMsg">Hello this is a test message</p>
+                        </div>
+                    </div>
+                    <div class="userComment">
+                        <img src="images/profile.jpg">
+                        <div class="msg">
+                            <p class="name">Programming</p>
+                            <p class="userMsg">Hello this is a test message</p>
+                        </div>
+                    </div>
+                    <div class="yourCommentDiv">
+                        <img src="images/profile.jpg">
+                        <form action="">
+                            <input type="text" name="" placeholder="Add your comment">
+                            <a href="#"><i class='bx bx-send'></i></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const backBtn=document.getElementById("backBtn");
+        backBtn.onclick=function(){
+            history.back();
+        }
+        
+    </script>
+</body>
+
+</html>

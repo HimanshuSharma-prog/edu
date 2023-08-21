@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+
+    <!-- <link rel="ic" href="images/logo.png"> -->
+    <link rel="shortcut icon" href="/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="shortcut icon" href="images/logo.png" type="image/png"> -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="topnav">
+            <div class="title">
+                <div class="backBtn" id="backBtn">
+                    <i class='bx bxs-chevron-left'></i>
+                </div>
+                <p>Java Programming</p>
+            </div>
+            <div class="profile">
+                <a href="dashboard.html" class="profileBtn">
+                    <img src="images/profile.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="container classworkDiv">
+            <div class="nav">
+                <div class="link" id="msgDivBtn"><i class='bx bx-message-square-dots' ></i> <p>Messages</p></div>
+                <div class="link" id="classWorkDivBtn"><i class='bx bx-file' ></i> <p>Classwork</p></div>
+            </div>
+            <div class="smallcontainer" id="msgDiv">
+                <!-- <embed src="../teacher/doc/test.pdf" type="application/pdf" width="500px" height="500px"> -->
+                <div class="msgDiv">
+                    <form action="">
+                        <div class="msgInput">
+                            <i class='bx bx-message-square-dots' ></i>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <div class="btndiv">
+                            <div class="docInput">
+                                <div class="text">
+                                    <i class='bx bx-file' ></i>
+                                    <p>Select a document</p>
+                                </div>
+                                <input type="file" name="">
+                            </div>
+                            <input type="submit" value="Post" class="btn">
+                        </div>
+                    </form>
+                </div>
+                <div class="yourMsgDiv">
+                    <div class="user">
+                        <div class="name">
+                            <img src="images/profile.jpg">
+                            <p>programming</p>
+                        </div>
+                        <a href="#" class="btn"><i class='bx bx-trash-alt'></i></a>
+                    </div>
+                    <p class="text">hello, this is a test message.</p>
+                    <div class="btndiv">
+                        <p>A file is attached with this message..</p>
+                        <a href="#" class="btn">Open File</a>
+                    </div>
+                </div>
+                <div class="studentMsgDiv">
+                    <div class="card">
+                        <div class="user">
+                            <div class="name">
+                                <img src="images/profile.jpg">
+                                <p>programming</p>
+                            </div>
+                            <!-- <a href="#" class="btn"><i class='bx bx-trash-alt'></i></a> -->
+                        </div>
+                        <p class="text">hello, this is a test message.</p>
+                        <div class="btndiv">
+                            <p>A file is attached with this message..</p>
+                            <a href="#" class="btn">Open File</a>
+                        </div>
+                        <div class="replyDiv">
+                            <img src="images/profile.jpg">
+                            <form action="">
+                                <input type="text" name="" placeholder="Add your comment">
+                                <a href="#"><i class='bx bx-send'></i></a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="user">
+                            <div class="name">
+                                <img src="images/profile.jpg">
+                                <p>programming</p>
+                            </div>
+                            <!-- <a href="#" class="btn"><i class='bx bx-trash-alt'></i></a> -->
+                        </div>
+                        <p class="text">hello, this is a test message.</p>
+                        <div class="btndiv">
+                            <p>A file is attached with this message..</p>
+                            <a href="#" class="btn">Open File</a>
+                        </div>
+                        <div class="replyDiv">
+                            <img src="images/profile.jpg">
+                            <form action="">
+                                <input type="text" name="" placeholder="Add your comment">
+                                <a href="#"><i class='bx bx-send'></i></a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="user">
+                            <div class="name">
+                                <img src="images/profile.jpg">
+                                <p>programming</p>
+                            </div>
+                            <!-- <a href="#" class="btn"><i class='bx bx-trash-alt'></i></a> -->
+                        </div>
+                        <p class="text">hello, this is a test message.</p>
+                        <div class="btndiv">
+                            <p>A file is attached with this message..</p>
+                            <a href="#" class="btn">Open File</a>
+                        </div>
+                        <div class="replyDiv">
+                            <img src="images/profile.jpg">
+                            <form action="">
+                                <input type="text" name="" placeholder="Add your comment">
+                                <a href="#"><i class='bx bx-send'></i></a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="smallcontainer" id="classWorkDiv" style="display: none;">
+               <!-- <h1>this is a class work div</h1> -->
+               <div class="classWorkCardDiv">
+                   <div class="card">
+                       <div class="header">
+                           <p><i class='bx bx-file'></i> Assignment</p>
+                           <p>01/04/2022</p>
+                       </div>
+                       <div class="fileDiv">
+                           <a href="docfile.html" class="docFile"><i class='bx bxs-file-doc' ></i> assignment.doc</a>
+                           <a href="docfile.html" class="docFile"><i class='bx bxs-file-pdf' ></i> test.pdf</a>
+                           <a href="docfile.html" class="docFile"><i class='bx bxs-image' ></i> assignment.png</a>
+                           <a href="docfile.html" class="docFile"><i class='bx bxs-file-doc' ></i> assignment.doc</a>
+                           <a href="docfile.html" class="docFile"><i class='bx bxs-file-pdf' ></i> test.pdf</a>
+                           <a href="docfile.html" class="docFile"><i class='bx bxs-image' ></i> assignment.png</a>
+                       </div>
+                       <div class="btndiv">
+                           <a href="viewclasswork.html" class="btn">View Details</a>
+                       </div>
+                   </div>
+
+                   <div class="card">
+                    <div class="header">
+                        <p><i class='bx bx-file'></i> Assignment</p>
+                        <p>01/04/2022</p>
+                    </div>
+                    <div class="fileDiv">
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-doc' ></i> assignment.doc</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-pdf' ></i> test.pdf</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-image' ></i> assignment.png</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-doc' ></i> assignment.doc</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-pdf' ></i> test.pdf</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-image' ></i> assignment.png</a>
+                    </div>
+                    <div class="btndiv">
+                        <a href="viewclasswork.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="header">
+                        <p><i class='bx bx-file'></i> Assignment</p>
+                        <p>01/04/2022</p>
+                    </div>
+                    <div class="fileDiv">
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-doc' ></i> assignment.doc</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-pdf' ></i> test.pdf</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-image' ></i> assignment.png</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-doc' ></i> assignment.doc</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-pdf' ></i> test.pdf</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-image' ></i> assignment.png</a>
+                    </div>
+                    <div class="btndiv">
+                        <a href="viewclasswork.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="header">
+                        <p><i class='bx bx-file'></i> Assignment</p>
+                        <p>01/04/2022</p>
+                    </div>
+                    <div class="fileDiv">
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-doc' ></i> assignment.doc</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-pdf' ></i> test.pdf</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-image' ></i> assignment.png</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-doc' ></i> assignment.doc</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-pdf' ></i> test.pdf</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-image' ></i> assignment.png</a>
+                    </div>
+                    <div class="btndiv">
+                        <a href="viewclasswork.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="header">
+                        <p><i class='bx bx-file'></i> Assignment</p>
+                        <p>01/04/2022</p>
+                    </div>
+                    <div class="fileDiv">
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-doc' ></i> assignment.doc</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-pdf' ></i> test.pdf</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-image' ></i> assignment.png</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-doc' ></i> assignment.doc</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-file-pdf' ></i> test.pdf</a>
+                        <a href="docfile.html" class="docFile"><i class='bx bxs-image' ></i> assignment.png</a>
+                    </div>
+                    <div class="btndiv">
+                        <a href="viewclasswork.html" class="btn">View Details</a>
+                    </div>
+                </div>
+               </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const backBtn=document.getElementById("backBtn");
+        backBtn.onclick=function(){
+            history.back();
+        }
+        
+        const classWorkDivBtn=document.getElementById("classWorkDivBtn");
+        const msgDivBtn=document.getElementById("msgDivBtn");
+        const classWorkDiv=document.getElementById("classWorkDiv");
+        const msgDiv=document.getElementById("msgDiv");
+
+        classWorkDivBtn.onclick=()=>{
+            // alert("hello");
+            classWorkDiv.style.display="block";
+            msgDiv.style.display="none";
+            classWorkDivBtn.style.background="#558645";
+            classWorkDivBtn.style.color="#fff";
+            msgDivBtn.style.background="#eaf5e6";
+            msgDivBtn.style.color="#558645";
+        }
+        msgDivBtn.onclick=()=>{
+            // alert("hello");
+            classWorkDiv.style.display="none";
+            msgDiv.style.display="flex";
+            msgDivBtn.style.background="#558645";
+            msgDivBtn.style.color="#fff";
+            classWorkDivBtn.style.background="#eaf5e6";
+            classWorkDivBtn.style.color="#558645";
+        }
+    </script>
+</body>
+
+</html>

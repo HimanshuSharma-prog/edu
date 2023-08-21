@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+
+    <!-- <link rel="ic" href="images/logo.png"> -->
+    <link rel="shortcut icon" href="/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="shortcut icon" href="images/logo.png" type="image/png"> -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="topnav">
+            <div class="title">
+                <div class="backBtn" id="backBtn">
+                    <i class='bx bxs-chevron-left'></i>
+                </div>
+                <p>Subject Papers</p>
+            </div>
+            <div class="profile">
+                <a href="dashboard.html" class="profileBtn">
+                    <img src="images/profile.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="container subjectPapersDiv">
+            <div class="tablediv">
+                <table>
+                    <tr class="tableHead">
+                        <td>Sr No.</td>
+                        <td>Year</td>
+                        <td>Subject</td>
+                        <td>Download</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2018</td>
+                        <td>Java programming</td>
+                        <td><a href="#" class="btn"><i class='bx bx-cloud-download'></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2018</td>
+                        <td>Java programming</td>
+                        <td><a href="#" class="btn"><i class='bx bx-cloud-download'></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2018</td>
+                        <td>Java programming</td>
+                        <td><a href="#" class="btn"><i class='bx bx-cloud-download'></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>2018</td>
+                        <td>Java programming</td>
+                        <td><a href="#" class="btn"><i class='bx bx-cloud-download'></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>2018</td>
+                        <td>Java programming</td>
+                        <td><a href="#" class="btn"><i class='bx bx-cloud-download'></i></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const backBtn=document.getElementById("backBtn");
+        backBtn.onclick=function(){
+            history.back();
+        }
+        
+    </script>
+</body>
+
+</html>

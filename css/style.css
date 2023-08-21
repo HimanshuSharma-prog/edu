@@ -1,0 +1,687 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: url("/edu/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.formDiv{
+    width: 350px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.842);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    color: #555;
+}
+.formDiv .title{
+    width: 100%;
+    padding: 5px 10px;
+    text-align: left;
+}
+.formDiv .title .text{
+    font-size: 24px;
+    margin: 5px auto;
+}
+.formDiv form{
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.formDiv form .input{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #555;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding:5px;
+}
+.formDiv form .input i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.formDiv form .input input{
+    width:90%;
+    height: 100%;
+    outline: none;
+    background: transparent;
+    border: none;
+    color: #555;
+}
+#hide{
+    display: none;
+}
+.formDiv form .forgotBtn{
+    width: 100%;
+    margin: 5px auto;
+    font-size: 18px;
+    text-align: right;
+    color: #558645;
+}
+.formDiv form .btn{
+    width: 100%;
+    height: 45px;
+    margin: 7px auto;
+    border-radius: 10px;
+    border: none;
+    background: #558645;
+    box-shadow: 1px 4px 30px #55864580;
+    color: #fff;
+    font-size: 20px;
+}
+.formDiv form .loginbtn{
+    width: 100%;
+    height: 45px;
+    margin: 7px auto;
+    border-radius: 10px;
+    border: none;
+    background: #558645;
+    box-shadow: 1px 4px 30px #55864580;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.formDiv .signup{
+    font-size: 18px;
+    margin: 5px auto;
+}
+.formDiv .signup a{
+    color: #558645;
+}
+
+
+/* nav */
+.nav{
+    width: 100vw;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    z-index: 99999999999999;
+}
+.nav nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    /* background: #eaf5e6; */
+    /* background: #eaf5e681; */
+    /* background: rgba(255, 255, 255, 0.395); */
+    background: #fff;
+    border-bottom: 1px solid #eaf5e6;
+    padding: 10px;
+}
+.nav nav .title{
+    height: 100%;
+    font-size: 25px;
+    color: #558645; 
+    /* color: #555; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.nav nav .title i{
+    font-size: 35px;
+    margin-right: 5px;
+}
+.nav nav .menuBtn{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+    color: #558645;
+    background: #eaf5e6;
+    display: none;
+}
+.nav nav .links ul{
+    display: flex;
+}
+.nav nav .links ul li a{
+    padding: 5px 15px;
+    margin: auto 5px;
+    font-size: 18px;
+    color: #555;
+}
+.nav nav .links ul li a:hover{
+    color: #558645;
+    border-bottom: 1px solid #558645;
+}
+.active{
+    color: #558645 !important;
+    border-bottom: 1px solid #558645;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* home */
+.homeDiv,
+.courseDiv,
+.contactDiv,
+.portalsDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.paddingDiv{
+    transition: .6s ease-in-out;
+}
+/* .courseDiv{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+} */
+.homeDiv .col,
+.courseDiv .col,
+.contactDiv .col,
+.portalsDiv .col{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.homeDiv .col .title,
+.courseDiv .col .title,
+.contactDiv .col .title{
+    width: 95%;
+    display: flex;
+    text-align: left;
+    font-size: 30px;
+    padding-left: 100px;
+    color: #558645;
+    margin-bottom: 10px;
+}
+.homeDiv .col .text,
+.courseDiv .col .text,
+.contactDiv .col .text{
+    width: 95%;
+    display: flex;
+    text-align: left;
+    font-size: 17px;
+    padding-left: 100px;
+    color:#555;
+    margin-bottom: 10px;
+}
+.homeDiv img,
+.courseDiv img,
+.contactDiv img,
+.portalsDiv img{
+    width: 60%;
+    /* height: 500px; */
+}
+
+.courseDiv .col .btndiv{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-left: 150px;
+}
+.courseDiv .col .btndiv .btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #eaf5e6;
+    font-size: 18px;
+    color: #558645;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.courseDiv .col .btndiv .btn i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* blog div */
+
+.blogDiv{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    /* scroll-behavior: smooth; */
+    transition: .6s ease-in-out;
+}
+.blogDiv .title{
+    width: 100%;
+    padding: 10px;
+    font-size: 30px;
+    color: #558645;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.blogDiv .cardDiv{
+    width: 80%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    overflow: auto;
+    padding: 10px;
+    /* background: #558645; */
+}
+.blogDiv .cardDiv .card{
+    border-radius: 10px;
+    background: #eaf5e6;
+    margin: 5px;
+    padding: 10px;
+    align-self: stretch;
+}
+.blogDiv .cardDiv .card img{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+}
+.blogDiv .cardDiv .card .title,
+.blogDiv .cardDiv .card .text{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 22px;
+    padding: 0px;
+}
+.blogDiv .cardDiv .card .text{
+    font-size: 17px;
+    color: #555;
+    height: 60px;
+    overflow: hidden;
+}
+.blogDiv .btn{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.954);
+    color: #558645;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.blogDiv #rightBtn{
+    position: absolute;
+    right: 12%;
+    top: 55%;
+}
+.blogDiv #leftBtn{
+    position: absolute;
+    left: 12%;
+    top: 55%;
+}
+
+/*  */
+.contactDiv .col .formdiv{
+    width: 100%;
+    padding-left: 120px;
+    /* background: #eaf5e6; */
+}
+.contactDiv .col .formdiv form{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    flex-direction: column;
+}
+.contactDiv .col .formdiv form .input{
+    width: 100%;
+    /* height: 45px;*/
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #555;
+    margin: 5px auto;
+    padding: 0 10px;
+    color: #555;
+}
+.contactDiv .col .formdiv form .input input{
+    height: 45px;
+    width: 92%;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    color: #555;
+}
+.contactDiv .col .formdiv form .input i{
+    font-size: 20px;
+    color: #555;
+}
+.contactDiv .col .formdiv form .msgInput{
+    padding: 10px;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
+}
+.contactDiv .col .formdiv form .input textarea{
+    height: 120px;
+    width: 92%;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    color: #555;
+    resize: none;
+}
+.contactDiv .col .formdiv form .btn{
+    width: 120px;
+    height: 45px;
+    background: #eaf5e6;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    color: #558645;
+    font-size: 18px;
+}
+
+/* footer */
+
+.footerDiv{
+    width: 100%;
+}
+.footerDiv footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    background: #eaf5e6;
+}
+.footerDiv footer .coldiv{
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #558645;
+}
+.footerDiv footer .coldiv .col{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    flex-direction: column;
+}
+.footerDiv footer .coldiv .col p{
+    font-size: 22px;
+    color: #558645;
+    margin-bottom: 5px;
+}
+.footerDiv footer .coldiv .col ul li a{
+    font-size: 18px;
+    color: #555;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+.footerDiv footer .coldiv .col ul li a:hover{
+    color: #558645;
+}
+.footerDiv footer .coldiv .col ul li a i{
+    font-size: 22px;
+    margin-right: 5px;
+}
+.footerDiv footer .coldiv .titleDiv{
+    width: 60%;
+    padding: 20px;
+}
+.footerDiv footer .coldiv .titleDiv .title{
+    font-size: 35px;
+    color: #558645;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footerDiv footer .coldiv .titleDiv .title i{
+    font-size: 45px;
+    margin-right: 5px;
+}
+.footerDiv footer .coldiv .titleDiv .text{
+    font-size: 18px;
+    color: #555;
+}
+.footerDiv footer .copyrightDiv{
+    font-size: 24px;
+    color: #558645;
+    padding-top: 10px;
+}
+
+/* portals div */
+.portalsDiv .col .title{
+    width: 100%;
+    padding-left: 20px;
+    display: flex;
+    text-align: left;
+    color: #558645;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.portalsDiv .col .details{
+    width: 100%;
+    padding-left: 20px;
+    display: flex;
+    text-align: left;
+    color: #555;
+    font-size: 17px;
+}
+.portalsDiv .col .btndiv{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 20px;
+}
+.portalsDiv .col .btndiv .btn{
+    width: 120px;
+    /* height: 100px; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #eaf5e6;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #558645;
+    padding: 20px 10px;
+}
+.portalsDiv .col .btndiv .btn i{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+/* responsive */
+@media(max-width:1200px){
+    .blogDiv .cardDiv{
+        width: 95%;
+    }
+    .blogDiv #rightBtn{
+        right: 7%;
+    }
+    .blogDiv #leftBtn{
+        left: 7%;
+    }
+}
+@media(max-width:1100px){
+    .footerDiv footer .coldiv{
+        width: 90%;
+    }
+}
+@media(max-width:1000px){
+    .homeDiv .col .title,
+    .courseDiv .col .title,
+    .homeDiv .col .text,
+    .courseDiv .col .text,
+    .courseDiv .col .btndiv,
+    .contactDiv .col .title,
+    .contactDiv .col .text{
+        padding-left: 30px;
+    }
+    .homeDiv img,
+    .courseDiv img,
+    .contactDiv img,
+    .portalsDiv img{
+        width: 100%;
+        /* height: 500px; */
+    }
+    .contactDiv .col .formdiv{
+        padding-left: 50px;
+    }
+}
+@media(max-width:900px){
+    .footerDiv footer .coldiv{
+        width: 100%;
+    }
+}
+@media(max-width:700px){
+    .nav nav{
+        flex-direction: column;
+        height: auto;
+    }
+    .nav nav .titleDiv{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .nav nav .menuBtn{
+        display: flex;
+    }
+    .nav nav .links{
+        width: 100%;
+        display: none;
+    }
+    .nav nav .links ul{
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .nav nav .links ul li{
+        margin: 7px;
+    }
+    .homeDiv,
+    .courseDiv,
+    .contactDiv{
+        flex-direction: column;
+    }
+    .contactDiv,
+    .portalsDiv{
+        flex-direction: column-reverse;
+    }
+    .homeDiv .col,
+    .courseDiv .col,
+    .contactDiv .col,
+    .portalsDiv .col{
+        width: 100%;
+        padding: 10px;
+    }
+    .courseDiv img{
+        display: none;
+    }
+    .contactDiv .col .formdiv{
+        padding-left: 30px;
+    }
+    /* .footerDiv footer .coldiv{
+        flex-direction: column;
+    } */
+    .footerDiv footer .coldiv .titleDiv{
+        display: none;
+    }
+}
+@media(max-width:450px){
+    .homeDiv .col .title,
+    .courseDiv .col .title,
+    .homeDiv .col .text,
+    .courseDiv .col .text,
+    .courseDiv .col .btndiv,
+    .contactDiv .col .title,
+    .contactDiv .col .text,
+    .contactDiv .col .formdiv{
+        padding-left: 0px;
+    }
+    .blogDiv .cardDiv{
+        width: 100%;
+    }
+    .blogDiv #rightBtn{
+        right: 5%;
+    }
+    .blogDiv #leftBtn{
+        left: 5%;
+    }
+}
